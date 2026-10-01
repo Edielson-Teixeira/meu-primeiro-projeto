@@ -1,0 +1,226 @@
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f4f9;
+}
+
+
+/* FORMULÁRIO */
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #555;
+}
+
+
+/* MENSAGENS DE ERRO */
+
+.erro {
+    color: red;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+}
+
+
+/* CONTADOR DA SENHA */
+
+.contador {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+
+/* REQUISITOS DA SENHA */
+
+.requisitos {
+    font-size: 12px;
+    margin-top: 8px;
+    padding-left: 18px;
+}
+
+.requisitos li {
+    color: #d9534f;
+    margin-bottom: 4px;
+}
+
+.requisitos li.valido {
+    color: #5cb85c;
+}
+
+
+/* BOTÃO */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+/* LISTA DE USUÁRIOS */
+
+#listaUsuarios {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaUsuarios h2 {
+    text-align: center;
+}
+
+.usuario {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.usuario p {
+    margin: 5px 0;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CAIXA DO MODAL */
+
+.caixa-modal {
+    background-color: white;
+
+    width: 400px;
+    max-width: 90%;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+/* BOTÃO X */
+
+.fechar {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background: none;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fechar:hover {
+    color: red;
+}
+
+
+/* BOTÃO ENTENDIDO */
+
+#entendido {
+    background-color: #333;
+    color: white;
+}
+
+#entendido:hover {
+    background-color: #555;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+}

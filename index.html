@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Usuário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Usuário</h1>
+
+        <form id="formulario">
+
+            <!-- NOME -->
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo">
+                <p id="erroNome" class="erro"></p>
+            </div>
+
+            <!-- TELEFONE -->
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="(00) 90000-0000">
+                <p id="erroTelefone" class="erro"></p>
+            </div>
+
+            <!-- CPF -->
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00">
+                <p id="erroCpf" class="erro"></p>
+            </div>
+
+            <!-- CEP -->
+            <div class="campo">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="00000-000">
+                <p id="erroCep" class="erro"></p>
+            </div>
+
+            <!-- E-MAIL -->
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+                <p id="erroEmail" class="erro"></p>
+            </div>
+
+            <!-- SENHA -->
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <p id="erroSenha" class="erro"></p>
+
+                <div class="contador">
+                    Caracteres digitados:
+                    <span id="contadorSenha">0</span>
+                </div>
+
+                <ul class="requisitos">
+                    <li id="req-tamanho">Mínimo de 6 caracteres</li>
+                    <li id="req-maiuscula">Pelo menos uma letra maiúscula</li>
+                    <li id="req-minuscula">Pelo menos uma letra minúscula</li>
+                    <li id="req-numero">Pelo menos um número</li>
+                    <li id="req-especial">Pelo menos um caractere especial</li>
+                </ul>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- LISTA DE USUÁRIOS -->
+
+    <div id="listaUsuarios">
+
+        <h2>Usuários Cadastrados</h2>
+
+    </div>
+
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal">
+
+        <div class="caixa-modal">
+
+            <button id="fecharX" class="fechar">X</button>
+
+            <h2>Cadastro realizado!</h2>
+
+            <p id="mensagemModal"></p>
+
+            <button id="entendido">Entendido</button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
